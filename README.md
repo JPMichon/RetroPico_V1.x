@@ -1,6 +1,6 @@
 # RetroPico_V1.x
 Un petit de développement basé sur un RP2040 comprenant un Port VGA, Wifi via un Module ESP-01, I2C, Lecteur MicroSD et plus.
-Beaucoups de fonctionnalitées sur un minuscule board (60mm X 45mm).
+Beaucoups de fonctionnalitées sur un minuscule PCB (60mm X 45mm).
 
 La Révision a jour du PCB est la 1.2
 
