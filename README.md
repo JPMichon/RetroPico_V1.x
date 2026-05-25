@@ -10,3 +10,9 @@ La Révision a jour du PCB est la 1.2
 En mode développement, l'alimentation ce fait par le connecteur USB Type-A situé en bas en utilisant un adapteur USB-A vers USB-C.
 
 En mode autonome, l'alimentation ce fait via le connecteur USB-C situé en haut à droite et le port USB Type-A peut servire a connecter un périphérique comme une souris, clavier, manette de jeux etc.
+
+# RetroPico I2C Addon
+Un module d'extension est en préparation permettant d'ajouter des entrées/Sorties et des modules I2C permettant de simplifier le dévelopepement.
+
+<img width="1725" height="1100" alt="image" src="https://github.com/user-attachments/assets/1e9806a6-bb5b-4f73-8353-ba124eb9c725" />
+
