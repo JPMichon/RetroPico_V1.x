@@ -218,7 +218,7 @@ def track_pulp_fiction():
 # --- BOUCLE PRINCIPALE DU JUKEBOX ---
 while True:
     print("\n" + "="*35)
-    print("   JUKEBOX   ")
+    print("   JUKEBOX ")
     print("="*35)
     print("1 - Mario Bros")
     print("2 - The Legend of Zelda")
