@@ -29,7 +29,7 @@ Le design a subit quelques modifications de design. Voici le tableau de l'assign
 # RetroPico I2C Addon
 Un module d'extension est en préparation permettant d'ajouter des entrées/Sorties et des modules I2C permettant de simplifier le dévelopepement.
 
-<img width="1725" height="1100" alt="image" src="https://github.com/user-attachments/assets/1e9806a6-bb5b-4f73-8353-ba124eb9c725" />
+<img width="1019" height="673" alt="image" src="https://github.com/user-attachments/assets/47bdc560-c56a-44de-9372-f5a676f50c30" />
 
 ## tableau des adresses I2C du module
 
