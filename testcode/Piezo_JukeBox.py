@@ -188,7 +188,33 @@ def track_pink_panther():
         0.15, 0.15, 0.15, 0.45, 0.10, 0.15, 0.15, 0.15, 0.15, 0.30, 0.30, 0.15, 0.15, 0.80
     ]
     play_track(part, temp, volume=1800, pause=0.04)
+    
+def track_star_wars():
+    print("🚀 Musique : Star Wars (Extended)")
+    part = [
+        'DO4', 'SOL4', 'SILENCE', 'FA4', 'MI4', 'RE4', 'DO5', 'SOL4', 'SILENCE', 
+        'FA4', 'MI4', 'RE4', 'DO5', 'SOL4', 'SILENCE', 'FA4', 'MI4', 'FA4', 'RE4', 'SILENCE',
+        'SOL4', 'SOL4', 'SOL4', 'DO5', 'SOL5', 'SILENCE', 'FA5', 'MI5', 'RE5', 'DO6', 'SOL5'
+    ]
+    temp = [
+        0.4, 0.4, 0.05, 0.13, 0.13, 0.13, 0.4, 0.2, 0.05,
+        0.13, 0.13, 0.13, 0.4, 0.2, 0.05, 0.13, 0.13, 0.13, 0.5, 0.2,
+        0.13, 0.13, 0.13, 0.4, 0.4, 0.05, 0.13, 0.13, 0.13, 0.4, 0.4
+    ]
+    play_track(part, temp, volume=2200, pause=0.03)
 
+def track_pulp_fiction():
+    print("🕶️ Musique : Pulp Fiction - Misirlou (Fast Tremolo)")
+    # Riff oriental ultra rapide nécessitant des notes dupliquées serrées
+    part = [
+        'MI4', 'MI4', 'MI4', 'MI4', 'FA4', 'FA4', 'SOL#4', 'SOL#4', 'LA4', 'LA4', 'SI4', 'SI4',
+        'DO5', 'DO5', 'SI4', 'SI4', 'LA4', 'LA4', 'SOL#4', 'SOL#4', 'FA4', 'FA4', 'MI4', 'MI4',
+        'MI4', 'MI4', 'MI4', 'MI4', 'RE4', 'RE4', 'DO4', 'DO4', 'SI3', 'SI3', 'SI3', 'SI3'
+    ]
+    temp = [0.06] * 36  # Succession ultra-rapide de notes de 60ms
+    play_track(part, temp, volume=2600, pause=0.01) # Micro-pause ultra courte
+    
+    
 # --- BOUCLE PRINCIPALE DU JUKEBOX ---
 while True:
     print("\n" + "="*35)
@@ -204,9 +230,11 @@ while True:
     print("8 - Seven Nation Army")
     print("9 - Pirates des Caraïbes")
     print("10 - La Panthère Rose")
+    print("11 - Star Wars 🚀")
+    print("12 - Pulp Fiction 🕶️")
     print("="*35)
     
-    choix = input("Choisissez un numéro (1-10) : ")
+    choix = input("Choisissez un numéro (1-12) : ")
     print("-"*35)
     
     if choix == "1": track_mario()
@@ -219,5 +247,7 @@ while True:
     elif choix == "8": track_seven()
     elif choix == "9": track_pirates()
     elif choix == "10": track_pink_panther()
+    elif choix == "11": track_star_wars()
+    elif choix == "12": track_pulp_fiction()
     else:print("❌ Choix invalide, réessayez.")
     utime.sleep(1)
