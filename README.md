@@ -28,3 +28,6 @@ Un module d'extension est en préparation permettant d'ajouter des entrées/Sort
 
 <img width="1725" height="1100" alt="image" src="https://github.com/user-attachments/assets/1e9806a6-bb5b-4f73-8353-ba124eb9c725" />
 
+tableau des adresses I2C du module
+
+<img width="256" height="154" alt="image" src="https://github.com/user-attachments/assets/037f8af3-744b-4097-852c-e45279ffd713" />
