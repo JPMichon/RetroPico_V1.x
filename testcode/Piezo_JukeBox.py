@@ -30,6 +30,54 @@ def play_track(partition, tempos, volume=2000, pause=0.02):
 
 # --- BASE DE DONNÉES EXTENDUE DU JUKEBOX ---
 
+def play_summer_storm():
+    Buzzer = PWM(Pin(Buzzer_system))
+    
+    # Extrait de la descente et de la montée frénétique de l'Orage (Presto)
+    partition = [
+        # Descente rapide
+        'RE5', 'DO5', 'SI4', 'LA4', 'SOL4', 'FA4', 'MI4', 'RE4',
+        'LA4', 'SOL4', 'FA4', 'MI4', 'RE4', 'DO4', 'SI3', 'LA3', # SI3 et LA3 simulés par octave 4
+        
+        # Motif de la tempête (alternance rapide)
+        'RE5', 'LA4', 'RE5', 'LA4', 'RE5', 'LA4', 'RE5', 'LA4',
+        'MI5', 'LA4', 'MI5', 'LA4', 'MI5', 'LA4', 'MI5', 'LA4',
+        'FA5', 'LA4', 'FA5', 'LA4', 'SOL5', 'LA4', 'SOL5', 'LA4',
+        
+        # Accord final puissant
+        'RE5', 'SILENCE'
+    ]
+    
+    # Remplacement des notes trop graves hors dictionnaire pour le buzzer
+    partition = ['RE4' if n == 'SI3' else 'MI4' if n == 'LA3' else n for n in partition]
+    
+    # Notes très courtes pour l'effet de vitesse (Presto)
+    tempos = [
+        0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10,
+        0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10, 0.10,
+        0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08,
+        0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08,
+        0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08,
+        0.40, 0.20
+    ]
+    
+    for note, duree in zip(partition, tempos):
+        frequence = NOTES[note]
+        
+        if frequence == 0:
+            Buzzer.duty_u16(0)
+            utime.sleep(duree)
+        else:
+            Buzzer.freq(frequence)
+            Buzzer.duty_u16(4000) # Volume élevé pour l'intensité de l'orage
+            utime.sleep(duree)
+            
+        # Pause ultra-courte pour enchaîner les notes sans perdre le rythme
+        Buzzer.duty_u16(0)
+        utime.sleep(0.02)
+        
+    Buzzer.duty_u16(0)
+    
 def track_mario():
     print("🎮 Musique : Mario Bros Theme (Long)")
     part = [
@@ -232,9 +280,10 @@ while True:
     print("10 - La Panthère Rose")
     print("11 - Star Wars 🚀")
     print("12 - Pulp Fiction 🕶️")
+    print("13 - L'Été (L'Orage)️")
     print("="*35)
     
-    choix = input("Choisissez un numéro (1-12) : ")
+    choix = input("Choisissez un numéro (1-13) : ")
     print("-"*35)
     
     if choix == "1": track_mario()
@@ -249,5 +298,6 @@ while True:
     elif choix == "10": track_pink_panther()
     elif choix == "11": track_star_wars()
     elif choix == "12": track_pulp_fiction()
+    elif choix == "13": play_summer_storm()
     else:print("❌ Choix invalide, réessayez.")
     utime.sleep(1)
