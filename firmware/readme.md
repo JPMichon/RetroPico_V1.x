@@ -1,4 +1,4 @@
-#Firmware RetroPico
+# Firmware RetroPico
 
 Bien que le RetroPico peut utiliser le Firmware de Pi Pico, vous ne pourrez pas utiliser la mémoire FLASH complete du RetroPico généralement du double de celle du Pi Pico original.
 
