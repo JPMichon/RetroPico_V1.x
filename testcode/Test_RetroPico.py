@@ -19,12 +19,12 @@ import uos, os
 # Configuration des Ports pour le RetroPico 1.x
 # Configure les ports en fonction de la revision du PCB
 if RetroPico_PCB_REV==1.0:
-    # v1.0 
+    # v1.0
     _I2C_SDA = 16 # définition de Data du I2C(0) (GP16)
     _I2C_SCL = 17 # définition de SCL du I2C(0) (GP17)
 
 else:
-    # v1.1 
+    # v1.1 and up
     _I2C_SDA = 12 # définition de Data du I2C(0) (GP12)
     _I2C_SCL = 13 # définition de SCL du I2C(0) (GP13)
     
@@ -287,7 +287,25 @@ def flash_led_P7():
     for i in range(20):
         pcf.toggle(7)
         utime.sleep(.2)
-    
+        
+def WaitAddonBTN():
+    pcf = PCF8574(i2c, address=_PCF8574AT)
+    # Étape essentielle pour le PCF8574 : écrire des '1' sur les broches en entrée
+    # pour activer leur fonctionnement en lecture / pull-up interne.
+    # Masque pour isoler les broches P4, P5, P6
+    # P4 = 1<<4 (0x10), P5 = 1<<5 (0x20), P6 = 1<<6 (0x40) -> Total = 0x70
+    pcf.port = 0x70 # activation des pins pour les boutons
+    while True:
+        P4 = pcf.pin(4)
+        P5 = pcf.pin(5)
+        P6 = pcf.pin(6)
+        # Les boutons force la pin a 0 (False) par defaut, ils sont a 1 (True) 
+        if not P4 or not P5 or not P6:
+            print("Bouton détecté ! [" + str(P6)+str(P5)+str(P4)+"]") # affichage du status des boutons
+            play_level_up()
+            break # On sort de la boucle pour continuer le script
+        utime.sleep(.2)
+
 def testNEOPIXEL():
     for color in COLORS:
         pixels_fill(color)
@@ -299,7 +317,7 @@ def ReadUserButton():
     Ubutton = Pin(_User_BTN,Pin.IN)
     while Ubutton.value()==1:
         utime.sleep(.1)
-    print("Détecté")    
+    print("User BTN Détecté")    
     play_level_up()
     
         
@@ -313,10 +331,11 @@ def AfficheMenu():
     print('4 - Test du Led P7 (Addon board)')
     print('5 - Test des boutons(Addon board)')
     print('6 - Scan du I2C')
-    print("7 - Test du Piezo")
-    print("8 - Test du EEPROM")
-    print("9 - Test du EEPROM (I2C Addon board)")
-    print("10 - User Button")
+    print('7 - Test du Piezo')
+    print('8 - Test du EEPROM')
+    print('9 - Test du EEPROM (Addon board)')
+    print('10 - User BTN main')
+    print('11 - User BTN (Addon board)')
     print('--------------')            
 #---------------------------------------------------------------------------
 # Initialisation 
@@ -337,7 +356,7 @@ print('-------------------------------------------------------------------')
 print('')
 while True:
     AfficheMenu()
-    choice = input('Votre choix (1-10):')
+    choice = input('Votre choix (1-11):')
     if choice=='1':
         print('Test du led GP25')
         testGP25()
@@ -368,3 +387,6 @@ while True:
     elif choice=='10':
         print("User Button")           
         ReadUserButton()
+    elif choice=='11':
+        print("User BTN (Addon)")           
+        WaitAddonBTN()
