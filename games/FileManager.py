@@ -1,5 +1,5 @@
 #----------------------------------------------------------
-#RetroPico v1.x diag tools
+#RetroPico FileManager
 #
 #
 # Identification de la version du PCB permettant la configuration adéquate certains IOs
