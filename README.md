@@ -23,7 +23,9 @@ En mode autonome, l'alimentation ce fait via le connecteur USB-C situé en haut 
 ## Assignation des IOs:
 Le design a subit quelques modifications de design. Voici le tableau de l'assignation des ports en fonction des versions de PCB.
 					
-<img width="806" height="629" alt="image" src="https://github.com/user-attachments/assets/7d91727c-a1c3-41de-9319-efd687865c9b" />
+<img width="806" height="629" alt="image" src="https://github.com/user-attachments/assets/ac3ac024-4dfc-43c1-afc2-c1d06886eee2" />
+			
+
 
 
 # RetroPico I2C Addon
