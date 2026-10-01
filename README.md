@@ -27,10 +27,11 @@ En mode monochrome, la carte mère est entièrement compatible avec le célèbre
 
 ## 📌 Spécifications de la Carte Mère (v1.4)
 
+
+
+<img width="435" height="410" alt="image" src="https://github.com/user-attachments/assets/28c7ffd2-e0df-4d74-8cfb-f1193450a8a2" />
+
 La révision **v1.4 (Stable)** de la carte mère intègre les caractéristiques suivantes :
-
-<img width="875" height="819" alt="image" src="https://github.com/user-attachments/assets/28c7ffd2-e0df-4d74-8cfb-f1193450a8a2" />
-
 * **Cœur de calcul** : Microcontrôleur **RP2040** épaulé par une mémoire Flash de **de 2-16 Mo (W25QxxFVSG)**.
 * **Affichage Vidéo** : Sortie **VGA** (connecteur DB15). Configuration rapide de l'affichage via trois ponts de soudure (`SJ1`, `SJ2`, `SJ3`) pour basculer facilement d'un rendu **Monochrome** à un rendu **RGB basique**.
 * **Stockage** : Lecteur de carte **MicroSD (TF Card)** avec broche de détection automatique (*Card Detect*) routée sur `GP11`.
