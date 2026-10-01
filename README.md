@@ -111,8 +111,6 @@ Les contributions (suggestions de boîtiers imprimés en 3D, optimisations de ro
 
 ## 📜 Licence
 
-## 📜 Licence
-
 Le matériel (fichiers de conception, schémas, typons) et les logiciels de ce projet sont mis à disposition selon les termes de la Licence **Creative Commons Attribution - Pas d'Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International (CC BY-NC-SA 4.0)**.
 
 ❌ **L'utilisation commerciale de ce projet (revente de PCBs nus, kits ou cartes retroPico assemblées) est strictement interdite sans autorisation préalable de l'auteur.**
