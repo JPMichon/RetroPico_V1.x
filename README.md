@@ -1,7 +1,5 @@
 # RetroPico_V1.x
 
-
-
 ## Compatibilité avec le projet Pico Micro Mac (pico-umac)
 
 Ce projet permet de faire tourner l'émulateur de MAC 128K sur le PCB. A l'aide d'une simple modification Soit de retirer la résistance en reseau (RN1), uen résistance de 100ohm est installé en R19, SJ2 et SJ3 doivent être shorter.
@@ -10,8 +8,6 @@ https://github.com/evansm7/pico-mac
 
 
 # 🕹️ retroPico (v1.4)
-
-[![Licence](https://shields.io)](https://spdx.org)
 
 **retroPico** est une plateforme matérielle open-source complète basée sur le microcontrôleur **Raspberry Pi RP2040**. Conçue pour l'émulation rétro, les projets vidéo/audio vintage et l'expérimentation, elle s'accompagne d'un écosystème modulaire comprenant une carte mère, une extension d'Entrées/Sorties (IO) I2C et un micro-système d'exploitation dédié.
 Beaucoups de fonctionnalitées sur un minuscule PCB (60mm X 45mm).
