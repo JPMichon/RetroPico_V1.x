@@ -1,0 +1,19 @@
+{
+    "deploy": [
+        "../deploy.md"
+    ],
+    "docs": "",
+    "features": [
+        "Dual-core",
+        "External Flash",
+        "USB"
+    ],
+    "images": [
+        "rp2-pico.jpg"
+    ],
+    "mcu": "rp2040",
+    "product": "RetroPico",
+    "thumbnail": "",
+    "url": "https://https://github.com/JPMichon/RetroPico_V1.x/",
+    "vendor": "JP"
+}
