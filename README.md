@@ -1,3 +1,12 @@
+## 📜 Licence
+
+Le matériel (fichiers de conception, schémas, typons) et les logiciels de ce projet sont mis à disposition selon les termes de la Licence **Creative Commons Attribution - Pas d'Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International (CC BY-NC-SA 4.0)**.
+
+❌ **L'utilisation commerciale de ce projet (revente de PCBs nus, kits ou cartes retroPico assemblées) est strictement interdite sans autorisation préalable de l'auteur.**
+
+Consultez le fichier [LICENSE](LICENSE) pour lire l'intégralité des termes.
+
+
 # RetroPico_V1.x
 
 ## Compatibilité avec le projet Pico Micro Mac (pico-umac)
@@ -99,19 +108,29 @@ Le matériel de la carte retroPico a été spécifiquement routé pour accueilli
 
 ---
 
-## 🤝 Contributions
+## 🎮 Logithèque : Les Jeux RetroPicoOS
 
-Les contributions (suggestions de boîtiers imprimés en 3D, optimisations de routage ou applications logicielles additionnelles) sont les bienvenues. N'hésitez pas à ouvrir une *Issue* ou à soumettre une *Pull Request*.
+Pour tester immédiatement les capacités matérielles du combo *RetroPico v1.4 + I2C Addon*, le dépôt intègre une suite de jeux rétro écrits en MicroPython. Ils utilisent l'écran OLED pour le rendu graphique et l'extenseur PCF8574 pour récupérer les actions des boutons.
+
+### Jeux inclus dans le dépôt :
+* **🚀 RetroPico_SpaceInvader.py** : Le grand classique spatial. Survivez aux vagues d'extraterrestres !
+* **🛡️ RetroPico_SpaceCombat.py** : Un jeu de combat et d'esquive de tirs dans l'espace.
+* **🌕 RetroPico_MoonLander_V2.py** : Dosé à la perfection. Utilisez vos propulseurs pour faire alunir votre module en douceur.
+* **🧱 RetroPico_Breakout.py** : Un jeu de casse-briques dynamique exploitant les boutons pour déplacer la raquette.
+* **🏓 RetroPico_PongGame.py** : L'indémodable jeu de tennis virtuel.
+* **💥 RetroPico_Artillery.py** : Calculez votre angle de tir et votre puissance pour détruire la cible adverse.
+* **🌀 RetroPico_GameofLife.py** : Une simulation graphique fluide du célèbre Jeu de la Vie de Conway.
+* **🕹️ RetroPico_Pinball.py** : Une adaptation compacte de flipper sur écran OLED.
+
+### 🕹️ Comment jouer ?
+1. Copiez les fichiers `.py` des jeux de votre choix sur une carte **MicroSD (formatée en FAT32)** ou directement dans la mémoire Flash interne du RP2040.
+2. Démarrez la console et sélectionnez votre espace de stockage (`FLASH` ou `SD`).
+3. Naviguez dans la liste à l'aide des boutons **Haut (P4)** et **Bas (P6)**.
+4. Appuyez sur **Sélection (P5)** sur le jeu choisi : `RetroPicoOS` chargera le code dynamiquement et lancera la partie !
+
 
 ---
 
-## 📜 Licence
-
-Le matériel (fichiers de conception, schémas, typons) et les logiciels de ce projet sont mis à disposition selon les termes de la Licence **Creative Commons Attribution - Pas d'Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International (CC BY-NC-SA 4.0)**.
-
-❌ **L'utilisation commerciale de ce projet (revente de PCBs nus, kits ou cartes retroPico assemblées) est strictement interdite sans autorisation préalable de l'auteur.**
-
-Consultez le fichier [LICENSE](LICENSE) pour lire l'intégralité des termes.
 
 			
 
