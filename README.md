@@ -1,17 +1,16 @@
-# 🕹️ retroPico (v1.x)
+# 🕹️ RetroPico (v1.x)
 
 **retroPico** est une plateforme matérielle open-source complète basée sur le microcontrôleur **Raspberry Pi RP2040**. Conçue pour l'émulation rétro, les projets vidéo/audio vintage et l'expérimentation, elle s'accompagne d'un écosystème modulaire comprenant une carte mère, une extension d'Entrées/Sorties (IO) I2C et un micro-système d'exploitation dédié.<br>
 
 ## 🤖 Assistant de Codage IA
 
-Si vous utilisez un agent IA (comme ChatGPT, Claude ou GitHub Copilot) pour vous aider à développer des scripts pour la retroPico, copiez-collez le contenu de notre [Prompt Système de Mentorat](RETROPICO_MENTOR_PROMPT.md). Il configurera l'IA avec toutes les broches et adresses exactes de la carte pour vous guider pas à pas sans faire d'erreurs matérielles !
-
+Si vous utilisez un agent IA (comme ChatGPT, Claude ou GitHub Copilot) pour vous aider à développer des scripts pour la retroPico, copiez-collez le contenu de notre [Tuteur RetroPico](RETROPICO_MENTOR_PROMPT.md). Il configurera l'IA avec toutes les broches et adresses exactes de la carte pour vous guider pas à pas sans faire d'erreurs matérielles !
 
 ---
 
 ## 📌 Spécifications de la Carte Mère (v1.4)
 
-
+Plusieurs révisions on été crée lors du développement. la version la plus abouti est la version 1.4. Les versions antérieurs sont en nombres très limités, c'est pour cette raison que je conserve ici l'historique du développement.
 
 <img width="435" height="410" alt="image" src="https://github.com/user-attachments/assets/28c7ffd2-e0df-4d74-8cfb-f1193450a8a2" />
 
@@ -24,8 +23,21 @@ La révision **v1.4 (Stable)** de la carte mère intègre les caractéristiques 
 * **Extensions** : Connecteur NeoPixel externe (configuré sur `GP24`) et connecteur d'extension I2C.
 * **Alimentation & Connectivité** : Connecteur **USB Type-C** (6 broches) équipé d'un fusible de protection de 500 mA et d'un régulateur de tension **AMS1117-3.3V**. Ce port USB femelle prend en charge le mode **USB Host**, permettant de connecter directement un **clavier standard** ou une **manette de jeu (Gamepad)** pour interagir avec vos programmes et émulateurs.
 
+**Beaucoups de fonctionnalitées pour un minuscule PCB (60mm X 45mm).**
 
-Beaucoups de fonctionnalitées sur un minuscule PCB (60mm X 45mm).
+
+## Spécificité du port VGA
+
+ La RetroPico peut être configuré soit en mode monochrome ou en 3 bits permettant l'affichage de 8 couleurs 
+ **Configuration couleur 3bits ou mode mono** : Le passage en mode mono ou couleur ce fait en changeant les points de soudure de **SJ1, SJ2 et SJ3**. 
+
+Le port VGA du RetroPico utilise la technique de ce projet  [PICO-VGA-Micropython par HughMaingauche](https://github.com/HughMaingauche/PICO-VGA-Micropython/blob/main/VGA.py) tout en y ajoutant la possibilité de fonctionner en mode monochrome afin de libérer encore plus de RAM pour les projets.
+
+En mode couleur, le buffer requière environ 120k de ram ce qui vous laisse environ 50k pour le programme.
+en mode monochrome, la taille du buffer est d'environ 40k vous donnant beaucoup plus de latitude.
+  
+il est possible d'utiliser le port VGA en **MicroPython** bien que cette solution n'est pas optimale, quand mes tests seront terminés, j'ajouterais les exemples dans le répertoire **testcode**.  
+
 
 ---
 
@@ -35,6 +47,9 @@ Ce tableau récapitule l'affectation des broches du RP2040 au fil des révisions
 
 <img width="730" height="568" alt="image" src="https://github.com/user-attachments/assets/1c53badb-5805-4934-ac96-cc5509bbca45" />
 
+---
+
+_⚠️ **Important :** Je rend disponible le fichier Gerber du PCB vous permettant l'assemblage du **retroPico** ce qui requière une certaine expérience et dextérité. Néanmoins, il est possible d'utiliser un Raspberri PI Pico vanille et un panneau de prototypage pour obtenir un équivalent fonctionnel._
 
 ---
 
@@ -73,9 +88,11 @@ La retroPico est une plateforme de développement polyvalente et versatile. Grâ
 
 * **Lien du projet d'origine** : [pico-mac (pico-umac) par evansm7](https://github.com)
 * **Démonstration Vidéo** : Vous pouvez visionner la vidéo complète de Jeff Geerling qui détaille l'installation et le rendu de cet émulateur sur le RP2040 : [Macintosh on a microcontroller (YouTube)](https://youtube.com).
-* **Configuration en mode mono** : En mode monochrome, le firmware d'origine s'associe automatiquement avec le brochage vidéo (`GP18`, `GP19`, `GP21`) et le lecteur SD de la carte retroPico.
-* **Modification sur la carte** : Il suffit de retirer le réseau de résistances (`RN1`). Une résistance de 100 ohms doit être installée en `R19`, et les cavaliers `SJ2` et `SJ3` doivent être court-circuités (*shorter*).
+* **Configuration en mode mono** : Le passage en mode mono ou couleur ce fait en changeant les points de soudure de **SJ1, SJ2 et SJ3**
 
+### 3. Retro gaming plateform
+A la base l'idée était de crée un projet doté d'une bonne flexibilité tant pour l'apprentissage qu'une base pour l'émulation rétro.
+un simple recherche web avec les termes "**rp2040 retro emulator**" vous obtiendrez une multitude de projet de toutes sortes qu'il serait trop long a énumérer ici.
 
 ---
 
@@ -102,7 +119,6 @@ La retroPico est une plateforme de développement polyvalente et versatile. Grâ
 
 ---
 
----
 ## 🎮 Logithèque : Les Jeux RetroPicoOS
 
 Pour tester immédiatement les capacités matérielles du combo *RetroPico v1.4 + I2C Addon*, le dépôt intègre une suite de jeux rétro écrits en MicroPython. Ils utilisent l'écran OLED pour le rendu graphique et l'extenseur PCF8574 pour récupérer les actions des boutons.
