@@ -2,8 +2,10 @@
 
 **retroPico** est une plateforme matérielle open-source complète basée sur le microcontrôleur **Raspberry Pi RP2040**. Conçue pour l'émulation rétro, les projets vidéo/audio vintage et l'expérimentation, elle s'accompagne d'un écosystème modulaire comprenant une carte mère, une extension d'Entrées/Sorties (IO) I2C et un micro-système d'exploitation dédié.<br>
 
+## 🤖 Assistant de Codage IA
 
-En mode monochrome, la carte mère est entièrement compatible avec le célèbre projet d'émulation Macintosh [**pico-mac (pico-umac)** d'evansm7](https://github.com).
+Si vous utilisez un agent IA (comme ChatGPT, Claude ou GitHub Copilot) pour vous aider à développer des scripts pour la retroPico, copiez-collez le contenu de notre [Prompt Système de Mentorat](.github/RETROPICO_MENTOR_PROMPT.md). Il configurera l'IA avec toutes les broches et adresses exactes de la carte pour vous guider pas à pas sans faire d'erreurs matérielles !
+
 
 ---
 
