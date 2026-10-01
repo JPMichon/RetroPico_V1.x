@@ -101,13 +101,15 @@ The retroPico is a highly versatile development platform. Thanks to its integrat
 
 For instance, its architecture natively supports Matt Evans' project, which runs a Macintosh 128K/Plus emulator on the RP2040:
 
-- **Original Project Link**: [pico-mac (pico-umac) par evansm7](https://github.com)
+- **Original Project Link**: [pico-mac (pico-umac) by evansm7](https://github.com)
 - **Video Demonstration**: You can watch Jeff Geerling's full video detailing the installation and performance of this emulator on the RP2040: [Macintosh on a microcontroller (YouTube)]([https://youtube.com](https://www.youtube.com/watch?v=-gOS22wEpmU)).
 - **Mono Mode Configuration**: Switch to mono mode by changing the solder spots on **SJ1, SJ2, and SJ3**.
 
 ### 3. Retro Gaming Platform
 
 The core philosophy behind this project was to create a flexible learning environment and a solid foundation for retro emulation. A quick web search for "**rp2040 retro emulator**" will yield a multitude of incredible community projects that would be too long to list here.
+
+---
 
 ## 📂 Repository Structure
 
@@ -119,6 +121,8 @@ The core philosophy behind this project was to create a flexible learning enviro
 ├── testcode/                  # MicroPython scripts to validate individual hardware components
 └── games/                     # MicroPython games designed to run on the I2C Addon board
 ```
+
+---
 
 ## 🎓 Accessibility & Raspberry Pi Pico Compatibility
 
@@ -142,6 +146,8 @@ This guide will teach you step-by-step how to:
 
 Once you understand the basics of blinking an LED or reading a button using that guide, the **RetroPico** ecosystem and its diagnostic tools (`testcode/`) will allow you to go much further (graphics, sound, games, and networking) without changing your workflow!
 
+---
+
 ## 🚀 Quick Start with RetroPicoOS (GUI Interface)
 
 The **RetroPicoOS** application allows you to browse the file system of either the onboard Flash or the SD card (if inserted). It enables file transfers between Flash and SD card storage, and can launch applications from either source. If you save the program as `main.py` in the root Flash directory, it will execute automatically whenever the RetroPico boots up. 
@@ -153,7 +159,29 @@ The **RetroPicoOS** application allows you to browse the file system of either t
 3. Upload the RetroPicoOS script named as main.py to the root of the Flash storage.
 4. Plug in the RetroPico I2C Addon module, insert a FAT32-formatted MicroSD card, and power it up!
 
+---
+
 ## 🎮 Game Library: RetroPicoOS Games
 
 To immediately test the hardware capabilities of the RetroPico v1.4 + I2C Addon combo, the repository includes a suite of retro games written in MicroPython. They utilize the OLED screen for graphics and the PCF8574 expander to read button inputs.
+* 🚀 RetroPico_SpaceInvader.py: The all-time arcade classic. Survive waves of alien invaders!
+* 🛡 RetroPico_SpaceCombat.py: A space combat game focused on maneuvering and dodging enemy fire.
+* 🌕 RetroPico_MoonLander_V2.py: Perfectly balanced physics. Control your thrusters to land your module safely.
+* 🧱 RetroPico_Breakout.py: A dynamic brick-breaking game using the physical buttons to move the paddle.
+* 🏓 RetroPico_PongGame.py: The timeless virtual tennis match.
+* 💥 RetroPico_Artillery.py: Calculate your firing angle and power to obliterate the enemy target.
+* 🌀 RetroPico_GameofLife.py: A smooth graphical simulation of Conway's famous Game of Life.
+* 🕹 RetroPico_Pinball.py: A compact pinball adaptation tailored for the OLED screen.
 
+### 🕹️ How to Play?
+1. Copy the game .py files of your choice onto a **MicroSD card (formatted in FAT32)** or directly into the internal Flash memory of the RP2040.
+2. Turn on the console and select your active storage device (FLASH or SD).
+3. Scroll through the list using the **Up (P4)** and **Down (P6)** buttons.
+4. Press **Select (P5)** on your chosen game: RetroPicoOS will dynamically load the code and launch the session!
+
+---
+
+## 📜 License
+The hardware design files (schematics, layouts, Gerbers) and software in this project are licensed under **the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).**
+❌ **Commercial use of this project (including reselling bare PCBs, component kits, or pre-assembled retroPico boards) is strictly prohibited without prior written permission from the author.**
+Please review the full [LICENSE](LICENSE) file for more details.
