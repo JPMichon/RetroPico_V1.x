@@ -113,6 +113,18 @@ La retroPico est une plateforme de développement polyvalente et versatile. Grâ
 * **Démonstration Vidéo** : Vous pouvez visionner la vidéo complète de Jeff Geerling qui détaille l'installation et le rendu de cet émulateur sur le RP2040 : [Macintosh on a microcontroller (YouTube)]([https://youtube.com](https://www.youtube.com/watch?v=-gOS22wEpmU)).
 * **Configuration en mode mono** : Le passage en mode mono ou couleur ce fait en changeant les points de soudure de **SJ1, SJ2 et SJ3**
 
+---
+
+>## ⚠️ Règle d'or pour le développement
+>Lors du développement logiciel avec le RetroPico, si votre ordinateur est raccordé au connecteur USB-A via un adaptateur OTG, l'alimentation proviendra directement de l'ordinateur.
+>Pour éviter tout conflit de tension destructeur entre les deux sources d'alimentation: <br>
+>• Si la carte est éteinte : Alimentez-la uniquement via le PC. Vous ne devez absolument PAS connecter l'alimentation sur le connecteur USB-C (celui à gauche du connecteur VGA) en plus. <br>
+>• Si la carte est déjà allumée via l'USB-C : Vous devez obligatoirement DÉCONNECTER ce câble USB-C avant de relier le port USB-A à votre ordinateur.
+
+**« Le non-respect de cette consigne peut provoquer un retour de courant et endommager le port USB de votre ordinateur. Un développeur averti en vaut deux. »** <br>
+
+---
+
 ### 3. Retro gaming plateform
 A la base l'idée était de crée un projet doté d'une bonne flexibilité tant pour l'apprentissage qu'une base pour l'émulation rétro.
 un simple recherche web avec les termes "**rp2040 retro emulator**" vous obtiendrez une multitude de projet de toutes sortes qu'il serait trop long a énumérer ici.
