@@ -6,8 +6,24 @@ Ce répertoire regroupe l'intégralité des fichiers de conception matérielle d
 
 Le dossier est divisé en sous-modules correspondant aux différentes cartes du projet :
 
-* **`main-board-retroPico/`** : Fichiers sources et fichiers de fabrication (Gerber) de la carte mère principale basée sur le microcontrôleur RP2040 (Révision stable v1.4).
+* **`main-board-retroPico/`** : Fichiers sources de la carte mère principale basée sur le microcontrôleur RP2040 (Révision stable v1.4).
 * **`addon-i2c/`** : Fichiers de conception de la carte fille d'extension d'Entrées/Sorties comprenant l'écran OLED, les boutons et les capteurs (Révision v1.1).
+
+---
+
+## 📐 Schémas Électriques & Fabrication (Gerber)
+
+Pour permettre une consultation rapide et simplifier la commande de vos circuits imprimés (PCB) chez des fabricants comme JLCPCB, PCBWay ou d'autres, les fichiers de production ont été exportés et centralisés ci-dessous :
+
+### 🕹️ 1. Carte Mère Principale (v1.4)
+* **Schéma PDF :** [Consulter le schéma de la Carte Mère](./main-board-retroPico/schematic_main-board_v1.4.pdf) *(Assurez-vous de nommer votre PDF ainsi dans le dossier)*
+* **Production PCB :** 📦 **[Télécharger le fichier Gerber ZIP de la Carte Mère](./main-board-retroPico/Gerber_RetroPico_v1.4.zip)**
+
+### 🔌 2. Module d'Extension I2C Addon (v1.1)
+* **Schéma PDF :** [Consulter le schéma de l'I2C Addon](./addon-i2c/schematic_addon-i2c_v1.1.pdf) *(Assurez-vous de nommer votre PDF ainsi dans le dossier)*
+* **Production PCB :** 📦 **[Télécharger le fichier Gerber ZIP de l'I2C Addon](./addon-i2c/Gerber_RetroPico_I2C_Addon_v1.1.zip)**
+
+> 📥 **Comment commander vos PCB ?** Téléchargez le fichier `.zip` correspondant à la carte souhaitée et téléversez-le directement sur le site de votre fabricant de circuits imprimés favori sans le décompresser.
 
 ---
 
@@ -16,7 +32,6 @@ Le dossier est divisé en sous-modules correspondant aux différentes cartes du 
 Pour vous faciliter l'approvisionnement des composants électroniques nécessaires à l'assemblage de la carte mère, une nomenclature officielle et datée est disponible en libre téléchargement :
 
 👉 **[Consulter le fichier de nomenclature (CSV)](./BOM_RetroPico_v1.4_2026-10-01.csv)**
-
 
 ### 📌 Composants stratégiques de la Carte Mère v1.4
 
@@ -35,9 +50,7 @@ Pour vous faciliter l'approvisionnement des composants électroniques nécessair
 
 ## ⚠ Note importante sur l'assemblage
 
-Le soudage de la carte mère **RetroPico** requiert une certaine expérience en microsoudure de composants montés en surface (CMS/SMT), notamment pour le boîtier QFN-56 du RP2040 et le port USB Type-C à 6 broches. 
-
-Si vous débutez en électronique, prenez votre temps, utilisez du flux de soudure de bonne qualité et une loupe ou un microscope d'atelier. 
+Le soudage de la carte mère **RetroPico** requiert une certaine expérience en microsoudure de composants montés en surface (CMS/SMT), notamment pour le boîtier QFN-56 du RP2040 et le port USB Type-C. 
 
 En cas de problème au premier démarrage, référez-vous au guide de dépannage de la page principale :
 
