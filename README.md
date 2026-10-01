@@ -33,7 +33,7 @@ La révision **v1.4 (Stable)** de la carte mère intègre les caractéristiques 
 * **Connectivité Sans-Fil** : Emplacement pour module **ESP-01S (Wi-Fi)** exploitant les broches `GP9` et `GP10`.
 * **Audio & Effets** : Un **Buzzer magnétique (4000Hz)** intégré et une LED RGB adressable **WS2812B (NeoPixel)** gérée sur `GP23`.
 * **Extensions** : Connecteur NeoPixel externe (configuré sur `GP24`) et connecteur d'extension I2C.
-* **Alimentation & Connectivité** : Connecteur **USB Type-C** (6 broches) équipé d'un fusible de protection de 500 mA et d'un régulateur de tension **AMS1117-3.3V**. Ce port USB femelle prend en charge le mode **USB Host**, permettant de connecter directement un **clavier standard** ou une **manette de jeu (Gamepad)** pour interagir avec vos programmes et émulateurs.
+* **Alimentation & Connectivité** : Connecteur **USB Type-C** (6 broches) équipé d'un fusible de protection de 500 mA et d'un régulateur de tension **AP2114H-3.3**. Ce port USB femelle prend en charge le mode **USB Host**, permettant de connecter directement un **clavier standard** ou une **manette de jeu (Gamepad)** pour interagir avec vos programmes et émulateurs.
 
 **Beaucoups de fonctionnalitées pour un minuscule PCB (60mm X 45mm).**
 
