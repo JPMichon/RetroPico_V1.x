@@ -125,7 +125,33 @@ un simple recherche web avec les termes "**rp2040 retro emulator**" vous obtiend
 
 ---
 
-## 🚀 Démarrage Rapide avec RetroPicoOS
+## 🎓 Accessibilité & Compatibilité avec le Raspberry Pi Pico
+
+Si vous débutez en programmation ou en électronique, ne soyez pas intimidés ! Bien que la **RetroPico** intègre de nombreux composants sur un seul circuit imprimé (VGA, Wi-Fi, MicroSD, etc.), **son cœur reste un Raspberry Pi Pico standard**. 
+
+Il y a en réalité **très peu de différences** fondamentales entre cette carte et un Pi Pico classique :
+* **Même puce :** Le microcontrôleur principal est le RP2040. Tout code écrit pour un Pico standard fonctionnera ici.
+* **Mêmes bases :** La logique de programmation, l'utilisation des broches (GPIO) et l'environnement restent identiques.
+
+### 📚 Ressources pour les débutants
+
+Puisque l'architecture est la même, vous pouvez utiliser à 100 % les guides, tutoriels et documentations officiels de la fondation Raspberry Pi pour apprendre à programmer votre RetroPico. 
+
+Pour faire vos premiers pas, nous vous recommandons vivement le guide officiel :
+👉 **[Getting started with the Raspberry Pi Pico (Raspberry Pi Projects)](https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico)**
+
+Ce guide vous apprendra pas à pas à :
+1. Installer et configurer l'environnement de développement **Thonny**.
+2. Connecter votre carte à votre ordinateur et y installer le micrologiciel **MicroPython**.
+3. Écrire vos premiers scripts pour contrôler des entrées et des sorties.
+
+Une fois que vous aurez compris les bases du clignotement d'une LED ou de la lecture d'un bouton avec ce guide, l'écosystème de la **RetroPico** et ses scripts de test (`testcode/`) vous permettront d'aller beaucoup plus loin (affichage graphique, son, jeux et réseau) sans changer de méthode de travail !
+
+---
+
+## 🚀 Démarrage Rapide avec RetroPicoOS (interface GUI)
+
+L'application **RetroPicoOS**  permet au choix de naviguer dans le système de fichiers (File System) de la Flash ou de la carte SD si elle est présente. Il permet également de copier des fichiers de la Flash vers la carte SD et vice-versa, en plus de pouvoir lancer les applications soit depuis la Flash, soit depuis la carte SD. Si vous sauvegardez le programme sous le nom de main.py dans la Flash, il s'exécutera automatiquement au démarrage du RetroPico.Autre note importante : vous aurez besoin de l'extension (Addon) I2C, car les deux applications requièrent un écran OLED et 3 boutons pour naviguer.
 
 1. Installez le firmware officiel **MicroPython** (version Raspberry Pi Pico / RP2040) sur votre retroPico.
 2. Copiez les bibliothèques requises (`ssd1306.py`, `pcf8574.py` et `sdcard.py`) dans le dossier `/lib` de votre carte.
