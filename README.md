@@ -2,7 +2,9 @@
 
 **retroPico** est une plateforme matérielle open-source complète basée sur le microcontrôleur **Raspberry Pi RP2040**. Conçue pour l'émulation rétro, les projets vidéo/audio vintage et l'expérimentation, elle s'accompagne d'un écosystème modulaire comprenant une carte mère, une extension d'Entrées/Sorties (IO) I2C et un micro-système d'exploitation dédié.<br>
 
-Ne soyez pas trop critique avec mes choix de conception et mes schématique qui relève du hobbisme. mes études en électronique remonte a plus de 40 ans et je n'ai jamais travailler en conception. ce projet est un défi personnel afin de me prouver que je maitrise encore un minimum de connaissance pour bricoler en électronique avec des composantes moderne. l'époque du Z80 monter sur un "protoboard" avec un 7 segments, un eprom 2716, 2k de SDRAM et de surcroit coder en assembleur, semble tout droit venir de l'époque paléolithique.
+> [!NOTE]
+>_Ne soyez pas trop critique avec mes choix de conception et mes schématique qui relève du hobbisme. mes études en électronique remonte a plus de 40 ans et je n'ai jamais travailler en conception. ce projet est un défi personnel afin de me prouver que je maitrise encore un minimum de connaissance pour bricoler en électronique avec des composantes moderne. l'époque du Z80 monter sur un "protoboard" avec un sept segments, un eprom 2716, 2k de SDRAM et de surcroit coder en assembleur, semble tout droit venir de l'époque paléolithique._
+
 ---
 
 _⚠️ **Important :** Je rend disponible le fichier Gerber du PCB vous permettant l'assemblage du **retroPico** ce qui requière une certaine expérience et dextérité. Néanmoins, il est possible d'utiliser un Raspberri PI Pico vanille et un panneau de prototypage pour obtenir un équivalent fonctionnel._
