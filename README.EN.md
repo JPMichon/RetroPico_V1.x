@@ -13,6 +13,14 @@
 
 _⚠️ **Important:** I am providing the Gerber files for the PCB so you can assemble your own **retroPico**, which requires a certain level of soldering experience and dexterity. However, you can achieve a functionally equivalent setup using a vanilla Raspberry Pi Pico and a prototyping breadboard.*_
 
+---
+
+<img width="791" height="692" alt="image" src="https://github.com/user-attachments/assets/3cb99a51-60bd-45b2-b1b3-6a16bee65eb3" />
+
+Version 1.3 on the picture
+
+---
+
 ## 🤖 AI Coding Assistant
 
 If you are using an AI agent (such as ChatGPT, Claude, or GitHub Copilot) to help you develop scripts for the retroPico, simply copy and paste the contents of our **RetroPico Mentor Prompt** (`RETROPICO_MENTOR_PROMPT.md`). It will configure the AI with all the exact pinouts and board addresses, guiding you step-by-step without hardware errors!
