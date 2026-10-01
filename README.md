@@ -5,6 +5,9 @@
 > [!NOTE]
 >_Ne soyez pas trop critique avec mes choix de conception et mes schématique qui relève du hobbisme. mes études en électronique remonte a plus de 40 ans et je n'ai jamais travailler en conception. ce projet est un défi personnel afin de me prouver que je maitrise encore un minimum de connaissance pour bricoler en électronique avec des composantes moderne. l'époque du Z80 monter sur un "protoboard" avec un sept segments, un eprom 2716, 2k de SDRAM et de surcroit coder en assembleur, semble tout droit venir de l'époque paléolithique._
 
+
+⚠️  Vous comprendrez que ce PCB est de niveau lobbyistes, il n'est pas conçu pour intégrer des projets commerciaux. 
+
 ---
 
 _⚠️ **Important :** Je rend disponible le fichier Gerber du PCB vous permettant l'assemblage du **retroPico** ce qui requière une certaine expérience et dextérité. Néanmoins, il est possible d'utiliser un Raspberri PI Pico vanille et un panneau de prototypage pour obtenir un équivalent fonctionnel._
