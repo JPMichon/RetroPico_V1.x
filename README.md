@@ -1,7 +1,7 @@
 # 🕹️ retroPico (v1.x)
 
-**retroPico** est une plateforme matérielle open-source complète basée sur le microcontrôleur **Raspberry Pi RP2040**. Conçue pour l'émulation rétro, les projets vidéo/audio vintage et l'expérimentation, elle s'accompagne d'un écosystème modulaire comprenant une carte mère, une extension d'Entrées/Sorties (IO) I2C et un micro-système d'exploitation dédié.
-Beaucoups de fonctionnalitées sur un minuscule PCB (60mm X 45mm).
+**retroPico** est une plateforme matérielle open-source complète basée sur le microcontrôleur **Raspberry Pi RP2040**. Conçue pour l'émulation rétro, les projets vidéo/audio vintage et l'expérimentation, elle s'accompagne d'un écosystème modulaire comprenant une carte mère, une extension d'Entrées/Sorties (IO) I2C et un micro-système d'exploitation dédié.<br>
+
 
 En mode monochrome, la carte mère est entièrement compatible avec le célèbre projet d'émulation Macintosh [**pico-mac (pico-umac)** d'evansm7](https://github.com).
 
@@ -20,7 +20,10 @@ La révision **v1.4 (Stable)** de la carte mère intègre les caractéristiques 
 * **Connectivité Sans-Fil** : Emplacement pour module **ESP-01S (Wi-Fi)** exploitant les broches `GP9` et `GP10`.
 * **Audio & Effets** : Un **Buzzer magnétique (4000Hz)** intégré et une LED RGB adressable **WS2812B (NeoPixel)** gérée sur `GP23`.
 * **Extensions** : Connecteur NeoPixel externe (configuré sur `GP24`) et connecteur d'extension I2C.
-* **Alimentation** : Connecteur **USB Type-C** (6 broches), fusible de protection de 500 mA et régulateur de tension **AMS1117-3.3V**.
+* **Alimentation & Connectivité** : Connecteur **USB Type-C** (6 broches) équipé d'un fusible de protection de 500 mA et d'un régulateur de tension **AMS1117-3.3V**. Ce port USB femelle prend en charge le mode **USB Host**, permettant de connecter directement un **clavier standard** ou une **manette de jeu (Gamepad)** pour interagir avec vos programmes et émulateurs.
+
+
+Beaucoups de fonctionnalitées sur un minuscule PCB (60mm X 45mm).
 
 ---
 
@@ -61,10 +64,16 @@ Un micro-système d'exploitation et gestionnaire de fichiers conçu sur mesure e
 * **Copie Inter-Stockage** : Permet de dupliquer un fichier à la volée de la mémoire Flash interne vers la carte MicroSD (et vice-versa).
 * **Diagnostic** : Calcule et affiche l'espace Flash total et disponible au démarrage.
 
-### 2. Émulation Macintosh : pico-mac (C/C++)
-Le matériel de la carte retroPico a été spécifiquement routé pour accueillir nativement le projet **pico-mac**.
-* **Configuration** : Fermez le pont de soudure monochrome (`SJ1`) pour lier les lignes vidéo. 
-* Le firmware d'origine s'associe automatiquement avec le brochage vidéo (`GP18`, `GP19`, `GP21`) et le lecteur SD de la carte retroPico.
+### 2. Portages et Émulation (C/C++)
+La retroPico est une plateforme de développement polyvalente et versatile. Grâce à son port VGA intégré permettant un affichage monochrome ou en 8 couleurs (RGB basique), elle constitue une base matérielle idéale pour porter de nombreux autres émulateurs existants conçus pour le Raspberry Pi Pico (consoles 8/16-bit, ordinateurs vintage, etc.).
+
+À titre d'exemple, son architecture lui permet d'accueillir nativement le projet de Matt Evans permettant de faire tourner un émulateur de Macintosh 128K/Plus sur le RP2040 :
+
+* **Lien du projet d'origine** : [pico-mac (pico-umac) par evansm7](https://github.com)
+* **Démonstration Vidéo** : Vous pouvez visionner la vidéo complète de Jeff Geerling qui détaille l'installation et le rendu de cet émulateur sur le RP2040 : [Macintosh on a microcontroller (YouTube)](https://youtube.com).
+* **Configuration en mode mono** : En mode monochrome, le firmware d'origine s'associe automatiquement avec le brochage vidéo (`GP18`, `GP19`, `GP21`) et le lecteur SD de la carte retroPico.
+* **Modification sur la carte** : Il suffit de retirer le réseau de résistances (`RN1`). Une résistance de 100 ohms doit être installée en `R19`, et les cavaliers `SJ2` et `SJ3` doivent être court-circuités (*shorter*).
+
 
 ---
 
@@ -90,11 +99,6 @@ Le matériel de la carte retroPico a été spécifiquement routé pour accueilli
 4. Connectez le module **RetroPico I2C Addon**, insérez une carte MicroSD (FAT) et démarrez l'ensemble !
 
 ---
-
-## Compatibilité avec le projet Pico Micro Mac (pico-umac)
-
-Ce projet permet de faire tourner l'émulateur de MAC 128K sur le PCB. A l'aide d'une simple modification Soit de retirer la résistance en reseau (RN1), uen résistance de 100ohm est installé en R19, SJ2 et SJ3 doivent être shorter.
-https://github.com/evansm7/pico-mac
 
 ---
 ## 🎮 Logithèque : Les Jeux RetroPicoOS
