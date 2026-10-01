@@ -112,7 +112,8 @@ The retroPico is a highly versatile development platform. Thanks to its integrat
 For instance, its architecture natively supports Matt Evans' project, which runs a Macintosh 128K/Plus emulator on the RP2040:
 
 - **Original Project Link**: [pico-mac (pico-umac) by evansm7](https://github.com/evansm7/pico-mac)
-- **Video Demonstration**: You can watch Jeff Geerling's full video detailing the installation and performance of this emulator on the RP2040: [Macintosh on a microcontroller (YouTube)]([https://youtube.com](https://www.youtube.com/watch?v=-gOS22wEpmU)).
+- **Video Demonstration**: You can watch Jeff Geerling's full video detailing the installation and performance of this emulator on the RP2040:
+ https://www.youtube.com/watch?v=-gOS22wEpmU
 - **Mono Mode Configuration**: Switch to mono mode by changing the solder spots on **SJ1, SJ2, and SJ3**.
 
 ---
