@@ -1,5 +1,7 @@
 # 🕹️ RetroPico (v1.x)
 
+[English version available here 🇬🇧](./README.EN.md)
+
 **retroPico** est une plateforme matérielle open-source complète basée sur le microcontrôleur **Raspberry Pi RP2040**. Conçue pour l'émulation rétro, les projets vidéo/audio vintage et l'expérimentation, elle s'accompagne d'un écosystème modulaire comprenant une carte mère, une extension d'Entrées/Sorties (IO) I2C et un micro-système d'exploitation dédié.<br>
 
 > [!NOTE]
@@ -102,7 +104,7 @@ La retroPico est une plateforme de développement polyvalente et versatile. Grâ
 À titre d'exemple, son architecture lui permet d'accueillir nativement le projet de Matt Evans permettant de faire tourner un émulateur de Macintosh 128K/Plus sur le RP2040 :
 
 * **Lien du projet d'origine** : [pico-mac (pico-umac) par evansm7](https://github.com)
-* **Démonstration Vidéo** : Vous pouvez visionner la vidéo complète de Jeff Geerling qui détaille l'installation et le rendu de cet émulateur sur le RP2040 : [Macintosh on a microcontroller (YouTube)](https://youtube.com).
+* **Démonstration Vidéo** : Vous pouvez visionner la vidéo complète de Jeff Geerling qui détaille l'installation et le rendu de cet émulateur sur le RP2040 : [Macintosh on a microcontroller (YouTube)]([https://youtube.com](https://www.youtube.com/watch?v=-gOS22wEpmU)).
 * **Configuration en mode mono** : Le passage en mode mono ou couleur ce fait en changeant les points de soudure de **SJ1, SJ2 et SJ3**
 
 ### 3. Retro gaming plateform
