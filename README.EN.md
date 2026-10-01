@@ -1,8 +1,8 @@
 # 🕹 RetroPico (v1.x)
 
-[Version française disponible ici 🇫🇷](./README.md)
+[Version française disponible ici](./README.md)
 
-**retroPico** is a complete open-source hardware platform powered by the **Raspberry Pi RP2040** microcontroller. Designed for retro emulation, vintage video/audio projects, and hardware experimentation, it features a modular ecosystem including a motherboard, an I2C Input/Output (IO) extension board, and a dedicated micro-operating system.
+**RetroPico** is a complete open-source hardware platform powered by the **Raspberry Pi RP2040** microcontroller. Designed for retro emulation, vintage video/audio projects, and hardware experimentation, it features a modular ecosystem including a motherboard, an I2C Input/Output (IO) extension board, and a dedicated micro-operating system.
 
 > [!NOTE]
 > *Please don't be too critical of my design choices and schematics—this is a hobbyist project. My electronics studies date back over 40 years, and I have never worked professionally in hardware design. This project is a personal challenge to prove to myself that I still retain enough knowledge to tinker with modern electronic components. The days of building a Z80 on a breadboard with a 7-segment display, a 2716 EPROM, 2KB of SRAM, and coding it entirely in assembly language feel like they belong to the Paleolithic era!*
@@ -139,7 +139,7 @@ There is actually **very little difference** between this board and a standard P
 Since the architecture is identical, you can fully rely on the official Raspberry Pi Foundation guides and tutorials to learn how to program your RetroPico.
 
 To take your first steps, we highly recommend the official guide:  
-👉 **[Getting started with the Raspberry Pi Pico (Raspberry Pi Projects)](https://raspberrypi.org)**
+👉 **[Getting started with the Raspberry Pi Pico (Raspberry Pi Projects)](https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico)**
 
 This guide will teach you step-by-step how to:
 1. Install and configure the **Thonny** IDE.
