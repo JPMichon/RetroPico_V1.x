@@ -2,6 +2,12 @@
 
 **retroPico** est une plateforme matérielle open-source complète basée sur le microcontrôleur **Raspberry Pi RP2040**. Conçue pour l'émulation rétro, les projets vidéo/audio vintage et l'expérimentation, elle s'accompagne d'un écosystème modulaire comprenant une carte mère, une extension d'Entrées/Sorties (IO) I2C et un micro-système d'exploitation dédié.<br>
 
+---
+
+_⚠️ **Important :** Je rend disponible le fichier Gerber du PCB vous permettant l'assemblage du **retroPico** ce qui requière une certaine expérience et dextérité. Néanmoins, il est possible d'utiliser un Raspberri PI Pico vanille et un panneau de prototypage pour obtenir un équivalent fonctionnel._
+
+---
+
 ## 🤖 Assistant de Codage IA
 
 Si vous utilisez un agent IA (comme ChatGPT, Claude ou GitHub Copilot) pour vous aider à développer des scripts pour la retroPico, copiez-collez le contenu de notre [Tuteur RetroPico](RETROPICO_MENTOR_PROMPT.md). Il configurera l'IA avec toutes les broches et adresses exactes de la carte pour vous guider pas à pas sans faire d'erreurs matérielles !
@@ -46,10 +52,6 @@ il est possible d'utiliser le port VGA en **MicroPython** bien que cette solutio
 Ce tableau récapitule l'affectation des broches du RP2040 au fil des révisions matérielles. Les zones grises indiquent qu'une option n'était pas disponible sur cette version.
 
 <img width="730" height="568" alt="image" src="https://github.com/user-attachments/assets/1c53badb-5805-4934-ac96-cc5509bbca45" />
-
----
-
-_⚠️ **Important :** Je rend disponible le fichier Gerber du PCB vous permettant l'assemblage du **retroPico** ce qui requière une certaine expérience et dextérité. Néanmoins, il est possible d'utiliser un Raspberri PI Pico vanille et un panneau de prototypage pour obtenir un équivalent fonctionnel._
 
 ---
 
