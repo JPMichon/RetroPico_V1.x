@@ -115,6 +115,18 @@ For instance, its architecture natively supports Matt Evans' project, which runs
 - **Video Demonstration**: You can watch Jeff Geerling's full video detailing the installation and performance of this emulator on the RP2040: [Macintosh on a microcontroller (YouTube)]([https://youtube.com](https://www.youtube.com/watch?v=-gOS22wEpmU)).
 - **Mono Mode Configuration**: Switch to mono mode by changing the solder spots on **SJ1, SJ2, and SJ3**.
 
+---
+
+>## ⚠️ Golden Rule for Development
+>When developing software with the RetroPico, if your computer is connected to the USB-A port via an OTG adapter, power will come directly from the computer. 
+>To avoid any destructive voltage conflict between the two power sources: <br>
+>• If the board is turned off: Power it exclusively via the PC. You must absolutely NOT connect the USB-C power cable (the one to the left of the VGA connector) at the same time. <br>
+>• If the board is already powered on via USB-C: You must DISSCONNECT this USB-C cable before plugging the USB-A port into your computer.
+
+**"Failure to follow this instruction may cause backfeeding and damage your computer's USB port. Forewarned is forearmed."** <br>
+
+---
+
 ### 3. Retro Gaming Platform
 
 The core philosophy behind this project was to create a flexible learning environment and a solid foundation for retro emulation. A quick web search for "**rp2040 retro emulator**" will yield a multitude of incredible community projects that would be too long to list here.
