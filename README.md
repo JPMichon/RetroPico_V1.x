@@ -1,22 +1,4 @@
-## 📜 Licence
-
-Le matériel (fichiers de conception, schémas, typons) et les logiciels de ce projet sont mis à disposition selon les termes de la Licence **Creative Commons Attribution - Pas d'Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International (CC BY-NC-SA 4.0)**.
-
-❌ **L'utilisation commerciale de ce projet (revente de PCBs nus, kits ou cartes retroPico assemblées) est strictement interdite sans autorisation préalable de l'auteur.**
-
-Consultez le fichier [LICENSE](LICENSE) pour lire l'intégralité des termes.
-
-
-# RetroPico_V1.x
-
-## Compatibilité avec le projet Pico Micro Mac (pico-umac)
-
-Ce projet permet de faire tourner l'émulateur de MAC 128K sur le PCB. A l'aide d'une simple modification Soit de retirer la résistance en reseau (RN1), uen résistance de 100ohm est installé en R19, SJ2 et SJ3 doivent être shorter.
-https://github.com/evansm7/pico-mac
-
-
-
-# 🕹️ retroPico (v1.4)
+# 🕹️ retroPico (v1.x)
 
 **retroPico** est une plateforme matérielle open-source complète basée sur le microcontrôleur **Raspberry Pi RP2040**. Conçue pour l'émulation rétro, les projets vidéo/audio vintage et l'expérimentation, elle s'accompagne d'un écosystème modulaire comprenant une carte mère, une extension d'Entrées/Sorties (IO) I2C et un micro-système d'exploitation dédié.
 Beaucoups de fonctionnalitées sur un minuscule PCB (60mm X 45mm).
@@ -109,6 +91,12 @@ Le matériel de la carte retroPico a été spécifiquement routé pour accueilli
 
 ---
 
+## Compatibilité avec le projet Pico Micro Mac (pico-umac)
+
+Ce projet permet de faire tourner l'émulateur de MAC 128K sur le PCB. A l'aide d'une simple modification Soit de retirer la résistance en reseau (RN1), uen résistance de 100ohm est installé en R19, SJ2 et SJ3 doivent être shorter.
+https://github.com/evansm7/pico-mac
+
+---
 ## 🎮 Logithèque : Les Jeux RetroPicoOS
 
 Pour tester immédiatement les capacités matérielles du combo *RetroPico v1.4 + I2C Addon*, le dépôt intègre une suite de jeux rétro écrits en MicroPython. Ils utilisent l'écran OLED pour le rendu graphique et l'extenseur PCF8574 pour récupérer les actions des boutons.
@@ -129,9 +117,15 @@ Pour tester immédiatement les capacités matérielles du combo *RetroPico v1.4 
 3. Naviguez dans la liste à l'aide des boutons **Haut (P4)** et **Bas (P6)**.
 4. Appuyez sur **Sélection (P5)** sur le jeu choisi : `RetroPicoOS` chargera le code dynamiquement et lancera la partie !
 
-
 ---
 
+## 📜 Licence
+
+Le matériel (fichiers de conception, schémas, typons) et les logiciels de ce projet sont mis à disposition selon les termes de la Licence **Creative Commons Attribution - Pas d'Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International (CC BY-NC-SA 4.0)**.
+
+❌ **L'utilisation commerciale de ce projet (revente de PCBs nus, kits ou cartes retroPico assemblées) est strictement interdite sans autorisation préalable de l'auteur.**
+
+Consultez le fichier [LICENSE](LICENSE) pour lire l'intégralité des termes.
 
 			
 
