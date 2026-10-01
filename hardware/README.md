@@ -16,8 +16,8 @@ Le dossier est divisé en sous-modules correspondant aux différentes cartes du 
 Pour permettre une consultation rapide et simplifier la commande de vos circuits imprimés (PCB) chez des fabricants comme JLCPCB, PCBWay ou d'autres, les fichiers de production ont été exportés et centralisés ci-dessous :
 
 ### 🕹️ 1. Carte Mère Principale (v1.4)
-* **Schéma PDF :** [Consulter le schéma de la Carte Mère](schematic_main-board_v1.4.pdf) *(Assurez-vous de nommer votre PDF ainsi dans le dossier)*
-* **Production PCB :** 📦 **[Télécharger le fichier Gerber ZIP de la Carte Mère](Gerber_RetroPico_v1.4.zip)**
+* **Schéma PDF :** [Consulter le schéma de la Carte Mère](Schematic_uRetroputer_1.4.pdf) *(Assurez-vous de nommer votre PDF ainsi dans le dossier)*
+* **Production PCB :** 📦 **[Télécharger le fichier Gerber ZIP de la Carte Mère](PCB_uRetroputer_V1.4_2026-06-14.zip)**
 
 ### 🔌 2. Module d'Extension I2C Addon (v1.1)
 * **Schéma PDF :** [Consulter le schéma de l'I2C Addon](Schematic_I2C-IO_Board_1.1.pdf) *(Assurez-vous de nommer votre PDF ainsi dans le dossier)*
@@ -54,4 +54,4 @@ Le soudage de la carte mère **RetroPico** requiert une certaine expérience en 
 
 En cas de problème au premier démarrage, référez-vous au guide de dépannage de la page principale :
 
-👉 **[RetroPico RP2040 PCB Debug Flow](../README.md#-guide-de-dépannage-matériel-troubleshooting)**
+👉 **[RetroPico RP2040 PCB Debug Flow](RetroPico_DebugPCB.pdf)**
