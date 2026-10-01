@@ -20,7 +20,7 @@ Pour permettre une consultation rapide et simplifier la commande de vos circuits
 * **Production PCB :** 📦 **[Télécharger le fichier Gerber ZIP de la Carte Mère](Gerber_RetroPico_v1.4.zip)**
 
 ### 🔌 2. Module d'Extension I2C Addon (v1.1)
-* **Schéma PDF :** [Consulter le schéma de l'I2C Addon](schematic_addon-i2c_v1.1.pdf) *(Assurez-vous de nommer votre PDF ainsi dans le dossier)*
+* **Schéma PDF :** [Consulter le schéma de l'I2C Addon](Schematic_I2C-IO_Board_1.1.pdf) *(Assurez-vous de nommer votre PDF ainsi dans le dossier)*
 * **Production PCB :** 📦 **[Télécharger le fichier Gerber ZIP de l'I2C Addon](Gerber_RetroPico_I2C_Addon_v1.1.zip)**
 
 > 📥 **Comment commander vos PCB ?** Téléchargez le fichier `.zip` correspondant à la carte souhaitée et téléversez-le directement sur le site de votre fabricant de circuits imprimés favori sans le décompresser.
