@@ -36,25 +36,6 @@ La révision **v1.4 (Stable)** de la carte mère intègre les caractéristiques 
 
 ---
 
-## 🔌 Module d'Extension : RetroPico I2C Addon (v1.1)
-
-Pour enrichir l'interface utilisateur, le projet intègre un second PCB optionnel qui se connecte directement sur le port I2C principal : le **RetroPico I2C Addon**.
-
-* **Interface Visuelle** : Support pour un écran **OLED SSD1306** connecté en I2C.
-* **Entrées Utilisateur** : **3 boutons poussoirs** (`BTN1`, `BTN2`, `BTN3`) gérés via un extenseur de broches **PCF8574AT** (économie de broches sur le RP2040).
-* **Capteurs Environnementaux** : Emplacement pour un capteur combiné température/humidité/pression **AHT20 + BMP280**.
-* **Stockage embarqué** : Une mémoire EEPROM **CAT24Cxxx** dédiée au module.
-* **Cavalier WRITE** : Permet de relier la broche `WP` (Write Protect) à la masse (GND) pour **autoriser l'écriture** sur l'EEPROM. Non court-circuité, l'EEPROM reste verrouillée en lecture seule.
-* **Chaînage** : Intègre un port `I2C-INPUT` (protégé par un fusible) et **deux ports de sortie** (`I2C-OUT1`, `I2C-OUT2`) pour ajouter d'autres modules.
-
-<img width="510" height="335" alt="image" src="https://github.com/user-attachments/assets/47bdc560-c56a-44de-9372-f5a676f50c30" />
-
-## tableau des adresses I2C du module
-
-<img width="256" height="154" alt="image" src="https://github.com/user-attachments/assets/037f8af3-744b-4097-852c-e45279ffd713" />
-
----
-
 ## 📌 Table de Brochage des GPIO (Pinout Table)
 
 Ce tableau récapitule l'affectation des broches du RP2040 au fil des révisions matérielles. Les zones grises indiquent qu'une option n'était pas disponible sur cette version.
@@ -84,6 +65,25 @@ Ce tableau récapitule l'affectation des broches du RP2040 au fil des révisions
 | | ESP RX | < colspan=5 align=center> **GP1** |
 | | ESP IO0 | 🚫 | 🚫 | 🚫 | < colspan=2 align=center> **GP10** |
 | | ESP IO2 | 🚫 | 🚫 | 🚫 | < colspan=2 align=center> **GP9** |
+
+---
+
+## 🔌 Module d'Extension : RetroPico I2C Addon (v1.1)
+
+Pour enrichir l'interface utilisateur, le projet intègre un second PCB optionnel qui se connecte directement sur le port I2C principal : le **RetroPico I2C Addon**.
+
+* **Interface Visuelle** : Support pour un écran **OLED SSD1306** connecté en I2C.
+* **Entrées Utilisateur** : **3 boutons poussoirs** (`BTN1`, `BTN2`, `BTN3`) gérés via un extenseur de broches **PCF8574AT** (économie de broches sur le RP2040).
+* **Capteurs Environnementaux** : Emplacement pour un capteur combiné température/humidité/pression **AHT20 + BMP280**.
+* **Stockage embarqué** : Une mémoire EEPROM **CAT24Cxxx** dédiée au module.
+* **Cavalier WRITE** : Permet de relier la broche `WP` (Write Protect) à la masse (GND) pour **autoriser l'écriture** sur l'EEPROM. Non court-circuité, l'EEPROM reste verrouillée en lecture seule.
+* **Chaînage** : Intègre un port `I2C-INPUT` (protégé par un fusible) et **deux ports de sortie** (`I2C-OUT1`, `I2C-OUT2`) pour ajouter d'autres modules.
+
+<img width="510" height="335" alt="image" src="https://github.com/user-attachments/assets/47bdc560-c56a-44de-9372-f5a676f50c30" />
+
+## tableau des adresses I2C du module
+
+<img width="256" height="154" alt="image" src="https://github.com/user-attachments/assets/037f8af3-744b-4097-852c-e45279ffd713" />
 
 ---
 
