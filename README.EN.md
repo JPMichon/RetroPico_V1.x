@@ -1,5 +1,7 @@
 # 🕹 RetroPico (v1.x)
 
+[Version française disponible ici 🇫🇷](./README.md)
+
 **retroPico** is a complete open-source hardware platform powered by the **Raspberry Pi RP2040** microcontroller. Designed for retro emulation, vintage video/audio projects, and hardware experimentation, it features a modular ecosystem including a motherboard, an I2C Input/Output (IO) extension board, and a dedicated micro-operating system.
 
 > [!NOTE]
