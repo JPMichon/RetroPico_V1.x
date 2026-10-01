@@ -37,6 +37,12 @@ La révision **v1.4 (Stable)** de la carte mère intègre les caractéristiques 
 
 **Beaucoups de fonctionnalitées pour un minuscule PCB (60mm X 45mm).**
 
+## 🛠️ Guide de Dépannage Matériel (Troubleshooting)
+
+L'assemblage du **retroPico** est un défit en soit, le premier démarrage d'un PCB est l'épreuve ultime. Que vous soyez un constructeur chevronné ou que vous fassiez vos premiers pas avec le **RP2040**, les erreurs de soudure ou les composants capricieux font partie du processus.
+
+Pour vous accompagner, le dépôt inclut un organigramme complet basé sur de nombreuses sessions de débogage réelles : 
+👉 **[Consulter le RetroPico RP2040 PCB Debug Flow](./hardware/RetroPico_DebugPCB.pdf)** 
 
 ## Spécificité du port VGA
 
