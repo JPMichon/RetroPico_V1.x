@@ -11,7 +11,9 @@ Avant de commencer, vous devez configurer l'environnement de compilation officie
 1. Installez les dépendances de build de votre système (CMake, GCC ARM Toolchain).
 2. Clonez le dépôt officiel de MicroPython :
    ```bash
-   git clone --recursive https://github.com
+   git clone --recursive https://github.com/micropython/micropython
+   ```
+      ```bash
    cd micropython
    ```
 3. Compilez la mpy-cross (nécessaire pour le build final) :
