@@ -187,3 +187,8 @@ To immediately test the hardware capabilities of the RetroPico v1.4 + I2C Addon 
 The hardware design files (schematics, layouts, Gerbers) and software in this project are licensed under **the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).**
 ❌ **Commercial use of this project (including reselling bare PCBs, component kits, or pre-assembled retroPico boards) is strictly prohibited without prior written permission from the author.**
 Please review the full [LICENSE](LICENSE) file for more details.
+
+## ☕ Support the Project
+
+If you enjoy my work and want to buy me a coffee to support my hardware and coding projects on a completely voluntary basis, you can leave a tip on Ko-fi. It is entirely optional and greatly appreciated!
+
