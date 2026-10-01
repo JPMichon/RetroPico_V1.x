@@ -40,31 +40,8 @@ La révision **v1.4 (Stable)** de la carte mère intègre les caractéristiques 
 
 Ce tableau récapitule l'affectation des broches du RP2040 au fil des révisions matérielles. Les zones grises indiquent qu'une option n'était pas disponible sur cette version.
 
-| Fonctionnalité | Signal / Périphérique | v1.0 | v1.1 | v1.2 | v1.3 | v1.4 (Stable) |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Indicateur** | System LED | < colspan=5 align=center> **GP25** |
-| **Bouton** | User Button | < colspan=5 align=center> **GP26** |
-| **Audio** | Buzzer | < colspan=5 align=center> **GP6** |
-| **LED Adressable** | NeoPixel (PCB) | < colspan=5 align=center> **GP23** |
-| | NeoPixel (Connecteur broche) | 🚫 | 🚫 | 🚫 | 🚫 | **GP24** |
-| **Vidéo VGA** | VGA V-SYNC | < colspan=5 align=center> **GP19** |
-| | VGA H-SYNC | < colspan=5 align=center> **GP21** |
-| | VGA R (Rouge) | 🚫 | < colspan=4 align=center> **GP16** |
-| | VGA G (Vert) | 🚫 | < colspan=4 align=center> **GP17** |
-| | VGA B (Bleu) / Mode Mono | < colspan=5 align=center> **GP18 / Mono** |
-| **Stockage SD** | MicroSD Select (CS) | < colspan=5 align=center> **GP5** |
-| | MicroSD SCK | < colspan=5 align=center> **GP2** |
-| | MicroSD MOSI | < colspan=5 align=center> **GP3** |
-| | MicroSD MISO | < colspan=5 align=center> **GP4** |
-| | MicroSD Detect | 🚫 | 🚫 | 🚫 | < colspan=2 align=center> **GP11** |
-| **Bus I2C** | I2C SDA | < colspan=2 align=center> GP16 | < colspan=3 align=center> **GP12** |
-| | I2C SCL | < colspan=2 align=center> GP17 | < colspan=3 align=center> **GP13** |
-| **Extension Wi-Fi** | ESP Enable | < colspan=5 align=center> **GP8** |
-| *(Module ESP-01S)* | ESP Reset | < colspan=5 align=center> **GP7** |
-| | ESP TX | < colspan=5 align=center> **GP0** |
-| | ESP RX | < colspan=5 align=center> **GP1** |
-| | ESP IO0 | 🚫 | 🚫 | 🚫 | < colspan=2 align=center> **GP10** |
-| | ESP IO2 | 🚫 | 🚫 | 🚫 | < colspan=2 align=center> **GP9** |
+<img width="365" height="284" alt="image" src="https://github.com/user-attachments/assets/1c53badb-5805-4934-ac96-cc5509bbca45" />
+
 
 ---
 
