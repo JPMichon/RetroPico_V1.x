@@ -40,7 +40,7 @@ La révision **v1.4 (Stable)** de la carte mère intègre les caractéristiques 
 
 Ce tableau récapitule l'affectation des broches du RP2040 au fil des révisions matérielles. Les zones grises indiquent qu'une option n'était pas disponible sur cette version.
 
-<img width="365" height="284" alt="image" src="https://github.com/user-attachments/assets/1c53badb-5805-4934-ac96-cc5509bbca45" />
+<img width="730" height="568" alt="image" src="https://github.com/user-attachments/assets/1c53badb-5805-4934-ac96-cc5509bbca45" />
 
 
 ---
