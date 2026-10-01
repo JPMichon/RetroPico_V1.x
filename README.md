@@ -12,6 +12,12 @@
 
 ---
 
+<img width="791" height="692" alt="image" src="https://github.com/user-attachments/assets/3cb99a51-60bd-45b2-b1b3-6a16bee65eb3" />
+
+Version 1.3 sur la photo. 
+
+---
+
 _⚠️ **Important :** Je rend disponible le fichier Gerber du PCB vous permettant l'assemblage du **retroPico** ce qui requière une certaine expérience et dextérité. Néanmoins, il est possible d'utiliser un Raspberri PI Pico vanille et un panneau de prototypage pour obtenir un équivalent fonctionnel._
 
 ---
