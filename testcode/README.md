@@ -31,8 +31,10 @@ Le sous-dossier `lib/` inclus dans ce répertoire contient les pilotes indispens
 ## 🚀 Outils Système et Interface Graphique (GUI)
 
 Le répertoire inclut deux scripts avancés pour exploiter pleinement l'interface utilisateur de la carte :
-* **`RetroPicoOS.py`** : Une interface globale (OS) pour naviguer graphiquement dans le système de fichiers, gérer vos applications et basculer entre la mémoire Flash et la carte SD.
-* **`FileManager.py`** : Un utilitaire dédié à la gestion des fichiers, permettant de copier facilement des éléments de la Flash vers la carte SD et vice-versa.
+
+**`FileManager.py`** : Le programme filemanager.py est idéalement enregistré dans la mémoire Flash du RetroPico sous le nom de main.py (ce nom de fichier s'exécute automatiquement au démarrage).N'oubliez pas aussi de copier le répertoire /lib dans la Flash.Le programme FileManager permet de naviguer dans le répertoire racine de la carte MicroSD, puis de sélectionner et d'exécuter le programme MicroPython de votre choix.Les boutons P4 et P6 permettent de monter et descendre le curseur, et le bouton P5 permet de lancer le programme.La carte MicroSD doit obligatoirement être formatée en FAT32.
+  
+**`RetroPicoOS.py`** : Le programme RetroPicoOS.py est une version améliorée du FileManager. Il permet au choix de naviguer dans le système de fichiers (File System) de la Flash ou de la carte SD si elle est présente. Il permet également de copier des fichiers de la Flash vers la carte SD et vice-versa, en plus de pouvoir lancer les applications soit depuis la Flash, soit depuis la carte SD. Si vous sauvegardez le programme sous le nom de main.py dans la Flash, il s'exécutera automatiquement au démarrage du RetroPico.Autre note importante : vous aurez besoin de l'extension (Addon) I2C, car les deux applications requièrent un écran OLED et 3 boutons pour naviguer.
 
 > ⚠️ **Note importante** : L'utilisation de ces deux applications requiert obligatoirement le module d'extension **RetroPico I2C Addon**, car elles utilisent l'écran OLED et les 3 boutons physiques pour la navigation.
 
