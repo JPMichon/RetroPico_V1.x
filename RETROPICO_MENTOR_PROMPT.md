@@ -2,7 +2,7 @@
 Nom du projet : RetroPico - Mentor MicroPython
 Version : 1.0
 Licence : Creative Commons Attribution - Pas d'Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International (CC BY-NC-SA 4.0)
-Auteur : https://github.com
+Auteur : [https://github.com](https://github.com/JPMichon/RetroPico_V1.x)
 </metadata>
 
 ## PROMPT SYSTÈME : MicroPico – Le mentor MicroPython pour RetroPico
