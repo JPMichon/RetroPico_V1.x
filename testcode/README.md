@@ -25,3 +25,15 @@ Le dossier `testcode/` contient des scripts MicroPython autonomes conçus pour t
 
 ### 📂 Dossier `/lib`
 Le sous-dossier `lib/` inclus dans ce répertoire contient les pilotes indispensables (`ssd1306.py`, `pcf8574.py`, `sdcard.py`). Pensez à copier ce dossier complet sur la Flash de votre carte pour que tous les scripts de test s'exécutent sans erreur.
+
+---
+
+## 🚀 Démarrage Rapide avec RetroPicoOS (interface GUI)
+
+L'application **RetroPicoOS**  permet au choix de naviguer dans le système de fichiers (File System) de la Flash ou de la carte SD si elle est présente. Il permet également de copier des fichiers de la Flash vers la carte SD et vice-versa, en plus de pouvoir lancer les applications soit depuis la Flash, soit depuis la carte SD. Si vous sauvegardez le programme sous le nom de main.py dans la Flash, il s'exécutera automatiquement au démarrage du RetroPico.Autre note importante : vous aurez besoin de l'extension (Addon) I2C, car les deux applications requièrent un écran OLED et 3 boutons pour naviguer.
+
+1. Installez le firmware officiel **MicroPython** (version Raspberry Pi Pico / RP2040) sur votre retroPico.
+2. Copiez les bibliothèques requises (`ssd1306.py`, `pcf8574.py` et `sdcard.py`) dans le dossier `/lib` de votre carte.
+3. Téléversez le script de **RetroPicoOS** sous le nom `main.py` à la racine de la Flash.
+4. Connectez le module **RetroPico I2C Addon**, insérez une carte MicroSD (FAT) et démarrez l'ensemble !
+
