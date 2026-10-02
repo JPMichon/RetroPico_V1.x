@@ -22,10 +22,18 @@ _⚠️ **Important :** Je rend disponible le fichier Gerber du PCB vous permett
 
 ---
 
-## 🤖 Assistant de Codage IA
+<BR>
 
-Si vous utilisez un agent IA (comme ChatGPT, Claude ou GitHub Copilot) pour vous aider à développer des scripts pour la retroPico, copiez-collez le contenu de notre [Tuteur RetroPico](RETROPICO_MENTOR_PROMPT.md). Il configurera l'IA avec toutes les broches et adresses exactes de la carte pour vous guider pas à pas sans faire d'erreurs matérielles !
-
+># 🤖 Assistants de Codage IA
+>
+>Si vous utilisez un agent IA (comme ChatGPT, Claude ou GitHub Copilot) pour vous aider à développer sur la retroPico, configurez-le instantanément en lui copiant-collant l'un de nos profils personnalisés. L'IA connaîtra toutes les broches et adresses exactes de la carte pour coder sans faire d'erreurs matérielles !
+>
+>Choisissez le profil adapté à vos besoins :
+>
+>* **🎓 [Tuteur RetroPico (Mode Mentor)](RETROPICO_MENTOR_PROMPT.md)** : Parfait pour apprendre et progresser. L'IA adopte une posture pédagogique : elle vous guide pas à pas, vous propose des défis, isole vos bogues et vous laisse assembler le code par étapes sans jamais vous donner la solution complète d'un coup.
+>* **💼 [Développeur RetroPico (Mode Freelance)](RETROPICO_FreelanceCoder.md)** : Conçu pour l'efficacité et la vitesse. L'IA se comporte comme un programmeur senior à votre service : vous lui exposez votre idée ou votre cahier des charges, et elle vous livre un script complet, optimisé et immédiatement prêt à être copié-collé.
+>
+<BR><BR>
 ---
 
 ## 📌 Spécifications de la Carte Mère (v1.4)
