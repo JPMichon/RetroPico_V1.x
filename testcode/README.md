@@ -28,12 +28,17 @@ Le sous-dossier `lib/` inclus dans ce répertoire contient les pilotes indispens
 
 ---
 
-## 🚀 Démarrage Rapide avec RetroPicoOS (interface GUI)
+## 🚀 Outils Système et Interface Graphique (GUI)
 
-L'application **RetroPicoOS**  permet au choix de naviguer dans le système de fichiers (File System) de la Flash ou de la carte SD si elle est présente. Il permet également de copier des fichiers de la Flash vers la carte SD et vice-versa, en plus de pouvoir lancer les applications soit depuis la Flash, soit depuis la carte SD. Si vous sauvegardez le programme sous le nom de main.py dans la Flash, il s'exécutera automatiquement au démarrage du RetroPico.Autre note importante : vous aurez besoin de l'extension (Addon) I2C, car les deux applications requièrent un écran OLED et 3 boutons pour naviguer.
+Le répertoire inclut deux scripts avancés pour exploiter pleinement l'interface utilisateur de la carte :
+* **`RetroPicoOS.py`** : Une interface globale (OS) pour naviguer graphiquement dans le système de fichiers, gérer vos applications et basculer entre la mémoire Flash et la carte SD.
+* **`FileManager.py`** : Un utilitaire dédié à la gestion des fichiers, permettant de copier facilement des éléments de la Flash vers la carte SD et vice-versa.
 
+> ⚠️ **Note importante** : L'utilisation de ces deux applications requiert obligatoirement le module d'extension **RetroPico I2C Addon**, car elles utilisent l'écran OLED et les 3 boutons physiques pour la navigation.
+
+### ⚙️ Guide d'installation rapide
 1. Installez le firmware officiel **MicroPython** (version Raspberry Pi Pico / RP2040) sur votre retroPico.
 2. Copiez les bibliothèques requises (`ssd1306.py`, `pcf8574.py` et `sdcard.py`) dans le dossier `/lib` de votre carte.
-3. Téléversez le script de **RetroPicoOS** sous le nom `main.py` à la racine de la Flash.
-4. Connectez le module **RetroPico I2C Addon**, insérez une carte MicroSD (FAT) et démarrez l'ensemble !
-
+3. Téléversez le script de votre choix (`RetroPicoOS.py` ou `FileManager.py`) à la racine de la Flash. 
+4. *Optionnel* : Si vous souhaitez que l'interface se lance automatiquement au démarrage de la console, renommez le script choisi en **`main.py`** sur la Flash.
+5. Connectez le module **RetroPico I2C Addon**, insérez une carte MicroSD (formatée en FAT) et démarrez l'ensemble !
