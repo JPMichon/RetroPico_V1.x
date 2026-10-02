@@ -21,9 +21,19 @@ Version 1.3 on the picture
 
 ---
 
-## 🤖 AI Coding Assistant
+<BR>
 
-If you are using an AI agent (such as ChatGPT, Claude, or GitHub Copilot) to help you develop scripts for the retroPico, simply copy and paste the contents of our **RetroPico Mentor Prompt** (`RETROPICO_MENTOR_PROMPT.md`). It will configure the AI with all the exact pinouts and board addresses, guiding you step-by-step without hardware errors!
+# 🤖 AI Coding Assistants
+>
+>If you are using an AI agent (such as ChatGPT, Claude, or GitHub Copilot) to help you develop scripts for the retroPico, copy and paste one of our custom profiles to configure it instantly. The AI will be fully aware of the board's exact pinout and addresses, allowing you to code without any hardware mistakes!
+>
+>Choose the profile that best fits your workflow:
+>
+>* **🎓 [RetroPico Tutor (Mentor Mode)](RETROPICO_MENTOR_PROMPT.md)**: Perfect for learning and micro-stepping your progress. The AI takes on an educational role, guiding you step-by-step, proposing coding challenges, pinpointing errors, and letting you assemble the logic blocks without ever giving away the full solution upfront.
+>* **💼 [RetroPico Developer (Freelance Mode)](RETROPICO_FreelanceCoder.md)**: Built for speed and maximum efficiency. The AI acts as a senior embedded programmer at your service: you pitch your application idea or requirements, and it delivers a complete, optimized script that is immediately ready to be copied and pasted into Thonny.
+>
+>💡 **Note:** *Don't worry if the system prompts are written in French. Modern AI models understand and process them perfectly regardless of your conversation language. However, feel free to translate them into English or any other language before pasting if you prefer.*<BR>
+<BR><BR>
 
 ---
 
