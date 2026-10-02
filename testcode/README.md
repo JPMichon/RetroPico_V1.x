@@ -18,5 +18,10 @@ Le dossier `testcode/` contient des scripts MicroPython autonomes conçus pour t
 * **`ESP01_NTP_OLED.py`** : Connecte le module au Wi-Fi, récupère l'heure exacte sur Internet via un serveur NTP et l'affiche sur l'OLED.
 * **`ESP01_WebServer.py`** : Démarre un micro-serveur web sur le RP2040 grâce au module Wi-Fi, permettant de contrôler la carte depuis un navigateur ou un smartphone.
 
+### 📺 Tests de la Sortie Vidéo (Interface VGA)
+* **`Test_VGA_Mono.py`** : Valide le circuit vidéo en mode monochrome (noir et blanc) afin de vérifier la synchronisation HSYNC/VSYNC et le rendu de base sur un moniteur VGA.
+* **`test_vga_RGB.py`** : Teste la génération des signaux de couleur (Rouge, Vert, Bleu) sur la prise VGA pour s'assurer que toutes les lignes de couleur et leurs résistances associées fonctionnent correctement.
+
+
 ### 📂 Dossier `/lib`
 Le sous-dossier `lib/` inclus dans ce répertoire contient les pilotes indispensables (`ssd1306.py`, `pcf8574.py`, `sdcard.py`). Pensez à copier ce dossier complet sur la Flash de votre carte pour que tous les scripts de test s'exécutent sans erreur.
