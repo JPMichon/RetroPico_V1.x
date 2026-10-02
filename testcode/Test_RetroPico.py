@@ -1,4 +1,12 @@
-#----------------------------------------------------------
+# -----------------------------------------------------------------------------
+#  RetroPico v1.x - Test_RetroPico / Script de Diagnostic
+#  Copyright (c) 2026 JP Michon
+#  
+#  Ce programme et le matériel associé sont protégés par la licence :
+#  Creative Commons Attribution - Pas d'Utilisation Commerciale - 
+#  Partage dans les Mêmes Conditions 4.0 International (CC BY-NC-SA 4.0)
+# -----------------------------------------------------------------------------
+
 #RetroPico v1.x diag tools
 #
 #
