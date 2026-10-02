@@ -1,10 +1,15 @@
-#----------------------------------------------------------
-#RetroPico v1.x diag tools
-#
+# -----------------------------------------------------------------------------
+#  RetroPico v1.x - FileManager
+#  Copyright (c) 2026 JP Michon
+#  
+#  Ce programme et le matériel associé sont protégés par la licence :
+#  Creative Commons Attribution - Pas d'Utilisation Commerciale - 
+#  Partage dans les Mêmes Conditions 4.0 International (CC BY-NC-SA 4.0)
+# -----------------------------------------------------------------------------
 #
 # Identification de la version du PCB permettant la configuration adéquate certains IOs
 RetroPico_PCB_REV = 1.2
-#---------------------------------------------------------
+# -----------------------------------------------------------------------------
 from machine import I2C, Pin, SPI, PWM
 from ssd1306 import SSD1306_I2C
 from pcf8574 import PCF8574
