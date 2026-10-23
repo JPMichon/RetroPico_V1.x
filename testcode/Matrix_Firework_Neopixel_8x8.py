@@ -1,5 +1,5 @@
 # coder avec le System prompt RETROPICO_FreelanceCoder.md
-# requete: "fait une animation de feux d'artifice"
+# requete: "fait une animation de feux d'artifice sur un panneau neopixel 8x8 en omettant le pixel du PCB"
 #
 # Projet: https://github.com/JPMichon/RetroPico_V1.x
 #
